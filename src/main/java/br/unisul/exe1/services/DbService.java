@@ -21,11 +21,11 @@ public class DbService {
 	public void inicializaBancoDeDados() throws ParseException {
 		
 		
-		Atleta a1 = new Atleta(1, "Wander");
+		/*Atleta a1 = new Atleta(1, "Wander");
 		Competicao comp = new Competicao(1, "São Silvestre", "31/12/2019", a1);
 		compRep.save(comp);
 		a1.getCompeticoes().addAll(Arrays.asList(comp));
-		atlRep.saveAll(Arrays.asList(a1));
+		atlRep.saveAll(Arrays.asList(a1));*/
 	}
 
 }
