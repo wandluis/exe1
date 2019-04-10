@@ -39,6 +39,14 @@ public class Atleta implements Serializable{
 		this.nome = nome;
 	}
 
+	public Atleta(Integer id, String nome, List<Competicao> competicoes, Set<String> modalidades) {
+		super();
+		this.id = id;
+		this.nome = nome;
+		this.competicoes = competicoes;
+		this.modalidades = modalidades;
+	}
+
 	public Integer getId() {
 		return id;
 	}

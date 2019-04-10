@@ -51,13 +51,11 @@ public class AtletaService {
 	}
 	
 	public Atleta fromDTO(AtletaDTO objDto) {
-		return new Atleta(objDto.getId(),objDto.getNome(),null,null);
+		return new Atleta(objDto.getId(),objDto.getNome());
 	}
 	
 	public Atleta fromDTO(AtletaNewDTO objDto) {
 		Atleta atl = new Atleta(null, objDto.getCompeticao(), null, null);
-		Competicao com = new Competicao(null, objDto.getCompeticao(), objDto.getData(), atl);
-		atl.getCompeticoes().add(com);
 		atl.getModalidades().add(objDto.getModalidade1());
 		if (objDto.getModalidade2() != null)
 			atl.getModalidades().add(objDto.getModalidade2());
